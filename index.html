@@ -10,9 +10,12 @@
 </head>
 <body>
   <div id="root">
+    <!-- Check if all email are in the array -->
     <ul v-if="emailList.length === 10">
+      <!-- write all email -->
       <li v-for="number in emailList">{{ number }}</li>
     </ul>
+    <!-- write loading untill all email are saved -->
     <div v-else>LOADING......</div>
   </div>
   <script src="js/script.js"></script>
